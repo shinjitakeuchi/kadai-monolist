@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
+  
   include SessionsHelper
 
   private
@@ -23,5 +24,4 @@ class ApplicationController < ActionController::Base
         image_url: image_url,
       }
   end
-  
 end

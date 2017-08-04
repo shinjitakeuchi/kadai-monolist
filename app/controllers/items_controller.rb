@@ -2,7 +2,7 @@ class ItemsController < ApplicationController
   before_action :require_user_logged_in
   
   def new
-    @items = [ ]
+    @items = []
     
     @keyword = params[:keyword]
     if @keyword 
